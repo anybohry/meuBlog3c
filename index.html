@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Felino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mundo Felino</h1>
+        <p>Tudo sobre nossos amigos felinos</p>
+    </header>
+
+    <main>
+        <section id="habitos">
+            <h2>Hábitos dos Gatos</h2>
+            <p>Os gatos são animais independentes e curiosos. Apreciam a limpeza e adoram dormir em lugares quentes e confortáveis. 
+            Alguns hábitos curiosos incluem:</p>
+            <ul>
+                <li>Amassar objetos com as patas</li>
+                <li>Lambar para se limpar</li>
+                <li>Caçar pequenos animais</li>
+            </ul>
+        </section>
+
+        <section id="foto">
+            <h2>Seu Gato</h2>
+            <p>Compartilhe uma foto do seu gatinho conosco!</p>
+            <form action="#">
+                <input type="file" id="foto-gato">
+                <label for="foto-gato">Escolha uma foto</label>
+            </form>
+            <img id="imagem-gato" src="gato.jpg" alt="Foto de um gato"> </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mundo Felino</p>
+    </footer>
+
+    <script>
+        // JavaScript para manipular a imagem (opcional)
+        const inputFile = document.getElementById('foto-gato');
+        const imgPreview = document.getElementById('imagem-gato');
+
+        inputFile.addEventListener('change', () => {
+            const reader = new FileReader();
+            reader.onload = () => {
+                imgPreview.src = reader.result;
+            };
+            reader.readAsDataURL(inputFile.files[0]);
+        });
+    </script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: 45%;
+    padding: 20px;
+}
+
+#foto img {
+    max-width: 100%;
+}
