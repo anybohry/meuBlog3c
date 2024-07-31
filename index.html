@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Felino</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -37,20 +36,6 @@
     <footer>
         <p>&copy; 2023 Mundo Felino</p>
     </footer>
-
-    <script>
-        // JavaScript para manipular a imagem (opcional)
-        const inputFile = document.getElementById('foto-gato');
-        const imgPreview = document.getElementById('imagem-gato');
-
-        inputFile.addEventListener('change', () => {
-            const reader = new FileReader();
-            reader.onload = () => {
-                imgPreview.src = reader.result;
-            };
-            reader.readAsDataURL(inputFile.files[0]);
-        });
-    </script>
 </body>
 </html>
 
