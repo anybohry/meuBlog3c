@@ -39,10 +39,21 @@
             <p>Harry Potter é a história de um jovem que descobre aos 11 anos que é um bruxo. Ele perde seus pais quando
                 bebê, assassinados pelo terrível Lord Voldemort, e é levado para a Escola de Magia e Bruxaria de
                 Hogwarts. Lá, ele vive aventuras incríveis com seus amigos, Rony e Hermione.</p>
+
+            <!-- Livros -->
             <h3>Os Livros</h3>
-            <p>Harry Potter cresceu com sua série de livros, desde sua estreia com <strong>Harry Potter e a Pedra
-                    Filosofal</strong> até <strong>Harry Potter e as Relíquias da Morte</strong>. Cada livro apresenta
-                novos desafios e aventuras para o jovem bruxo.</p>
+            <ul id="livrosLista">
+                <li onclick="mostrarResumo('pedraFilosofalLivro')">Harry Potter e a Pedra Filosofal (1997)</li>
+                <li onclick="mostrarResumo('camaraSecretaLivro')">Harry Potter e a Câmara Secreta (1998)</li>
+                <li onclick="mostrarResumo('prisioneiroAzkabanLivro')">Harry Potter e o Prisioneiro de Azkaban (1999)</li>
+                <li onclick="mostrarResumo('caliceFogoLivro')">Harry Potter e o Cálice de Fogo (2000)</li>
+                <li onclick="mostrarResumo('ordemFenixLivro')">Harry Potter e a Ordem da Fênix (2003)</li>
+                <li onclick="mostrarResumo('enigmaPrincipeLivro')">Harry Potter e o Enigma do Príncipe (2005)</li>
+                <li onclick="mostrarResumo('reliquiasLivro')">Harry Potter e as Relíquias da Morte (2007)</li>
+            </ul>
+
+            <!-- Filmes -->
+            <h3>Os Filmes</h3>
             <ul id="filmeLista">
                 <li onclick="mostrarResumo('pedraFilosofal')">Harry Potter e a Pedra Filosofal (2001)</li>
                 <li onclick="mostrarResumo('camaraSecreta')">Harry Potter e a Câmara Secreta (2002)</li>
@@ -55,34 +66,10 @@
             </ul>
         </section>
 
-        <!-- Área para exibir os resumos dos filmes -->
+        <!-- Área para exibir os resumos dos livros e filmes -->
         <section>
-            <h2>Resumo dos Filmes</h2>
-            <p id="conteudoResumo">Clique em um dos títulos dos filmes para ver o resumo.</p>
-        </section>
-
-        <section>
-            <h3>Os Filmes</h3>
-            <p>A mágica dos livros foi brilhantemente adaptada para o cinema, levando milhões de espectadores a
-                experimentar as incríveis aventuras de Harry e seus amigos. Cada filme capturou a essência dos livros e
-                trouxe à vida os momentos mais icônicos da saga.</p>
-        </section>
-        <section>
-            <h2>O Sucesso de Harry Potter</h2>
-            <p>Por que <strong>Harry Potter</strong> faz tanto sucesso? A série explora temas universais como amizade,
-                coragem e a eterna luta entre o bem e o mal, além de personagens cativantes e bem desenvolvidos que
-                ressoam com o público.</p>
-            <h3>Temas Importantes</h3>
-            <p>Valores como a amizade verdadeira, a importância da coragem, e a luta contra a injustiça fazem de Harry
-                Potter uma série que cativa leitores de todas as idades. Além disso, cada personagem traz uma riqueza de
-                personalidade e uma jornada única.</p>
-        </section>
-
-        <section>
-            <h2>Além de Harry Potter</h2>
-            <p>A magia de J.K. Rowling vai além de Harry Potter. A autora também escreveu obras relacionadas, como a
-                série de filmes e livros de <strong>Animais Fantásticos e Onde Habitam</strong>, além de estar
-                fortemente envolvida em causas filantrópicas, apoiando diversas instituições de caridade.</p>
+            <h2>Resumo dos Livros e Filmes</h2>
+            <p id="conteudoResumo">Clique em um dos títulos para ver o resumo.</p>
         </section>
     </main>
 
