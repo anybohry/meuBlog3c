@@ -22,7 +22,7 @@ const resumos = {
 function mostrarResumo(titulo) {
     const conteudo = resumos[titulo];
     document.getElementById('conteudoResumo').textContent = conteudo;
-    document.getElementById('resumos').scrollIntoView({
+    document.getElementById('resumosConteudo').scrollIntoView({
         behavior: 'smooth'
     });
 }
