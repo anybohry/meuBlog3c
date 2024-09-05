@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>O Mundo Mágico de Harry Potter</title>
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-
     <header>
-
         <h1>O Mundo Mágico de Harry Potter</h1>
-
         <img src="img.jpg" alt="Harry Potter">
-
     </header>
 
     <main>
-
-        <h2>Sobre a Autora</h2>
-
-        <img src="foto.jpg" alt="J.K. Rowling">
-
-        <p>J.K. Rowling é a mente brilhante por trás do universo de Harry Potter. Descubra mais sobre a vida e a carreira da autora que encantou milhões de leitores ao redor do mundo.</p>
-
-        <h2>A Saga Harry Potter</h2>
-
-        <p>Mergulhe no mundo da magia e acompanhe as aventuras de Harry Potter e seus amigos em Hogwarts. Desvende os mistérios e os desafios enfrentados pelo jovem bruxo.</p>
+        <section>
+            <h2>Sobre J.K. Rowling: A Mágica por trás de Harry Potter</h2>
+            <img src="foto.jpg" alt="J.K. Rowling">
+            <p>Joanne Kathleen Rowling, mundialmente conhecida como J.K. Rowling, criou um dos universos mais icônicos
+                da literatura. Seu caminho para o sucesso foi marcado por dificuldades, incluindo momentos de pobreza e
+                rejeição editorial, até que sua brilhante ideia sobre um jovem bruxo revolucionou sua vida.</p>
+            <h3>Uma História de Superação</h3>
+            <p>J.K. Rowling passou por tempos difíceis antes de alcançar o sucesso com <strong>Harry Potter e a Pedra
+                    Filosofal</strong>. De uma vida difícil, incluindo a luta contra a depressão, ela conquistou o mundo
+                com suas histórias mágicas, que até hoje emocionam milhões de fãs ao redor do globo.</p>
+            <p>Alguns dos marcos em sua carreira incluem:</p>
+            <ul>
+                <li>Passar por momentos de pobreza antes de sua fama.</li>
+                <li>Ter a ideia de Harry Potter durante uma viagem de trem.</li>
+                <li>Ter seus livros rejeitados por várias editoras antes do sucesso.</li>
+                <li>Transformar "Harry Potter" em um fenômeno mundial.</li>
+            </ul>
+        </section>
 
         <section>
-
+            <h2>A Saga Harry Potter</h2>
+            <p>Harry Potter é a história de um jovem que descobre aos 11 anos que é um bruxo. Ele perde seus pais quando
+                bebê, assassinados pelo terrível Lord Voldemort, e é levado para a Escola de Magia e Bruxaria de
+                Hogwarts. Lá, ele vive aventuras incríveis com seus amigos, Rony e Hermione.</p>
             <h3>Os Livros</h3>
-
-            <ul>
-
-                <li>Harry Potter e a Pedra Filosofal.</li>
-                <li>Harry Potter e a Câmara Secreta.</li>
-                <li>Harry Potter e o Prisioneiro de Azkaban.</li>
-                <li>Harry Potter e o Cálice de Fogo.</li>
-                <li>Harry Potter e a Ordem da Fênix.</li>
-                <li>Harry Potter e o Enigma do Príncipe.</li>
-                <li>Harry Potter e as Relíquias da Morte.</li>
-             
-                </ul>
-
+            <p>Harry Potter cresceu com sua série de livros, desde sua estreia com <strong>Harry Potter e a Pedra
+                    Filosofal</strong> até <strong>Harry Potter e as Relíquias da Morte</strong>. Cada livro apresenta
+                novos desafios e aventuras para o jovem bruxo.</p>
+            <ul id="filmeLista">
+                <li onclick="mostrarResumo('pedraFilosofal')">Harry Potter e a Pedra Filosofal (2001)</li>
+                <li onclick="mostrarResumo('camaraSecreta')">Harry Potter e a Câmara Secreta (2002)</li>
+                <li onclick="mostrarResumo('prisioneiroAzkaban')">Harry Potter e o Prisioneiro de Azkaban (2004)</li>
+                <li onclick="mostrarResumo('caliceFogo')">Harry Potter e o Cálice de Fogo (2005)</li>
+                <li onclick="mostrarResumo('ordemFenix')">Harry Potter e a Ordem da Fênix (2007)</li>
+                <li onclick="mostrarResumo('enigmaPrincipe')">Harry Potter e o Enigma do Príncipe (2009)</li>
+                <li onclick="mostrarResumo('reliquiasParte1')">Harry Potter e as Relíquias da Morte - Parte 1 (2010)
+                </li>
+                <li onclick="mostrarResumo('reliquiasParte2')">Harry Potter e as Relíquias da Morte - Parte 2 (2011)</li>
+            </ul>
         </section>
+
         <section>
             <h3>Os Filmes</h3>
-            <p>Reviva as cenas mais mágicas dos filmes de Harry Potter.</p>
-            </section>
+            <p>A mágica dos livros foi brilhantemente adaptada para o cinema, levando milhões de espectadores a
+                experimentar as incríveis aventuras de Harry e seus amigos. Cada filme capturou a essência dos livros e
+                trouxe à vida os momentos mais icônicos da saga.</p>
+        </section>
+        <section>
+            <h2>O Sucesso de Harry Potter</h2>
+            <p>Por que <strong>Harry Potter</strong> faz tanto sucesso? A série explora temas universais como amizade,
+                coragem e a eterna luta entre o bem e o mal, além de personagens cativantes e bem desenvolvidos que
+                ressoam com o público.</p>
+            <h3>Temas Importantes</h3>
+            <p>Valores como a amizade verdadeira, a importância da coragem, e a luta contra a injustiça fazem de Harry
+                Potter uma série que cativa leitores de todas as idades. Além disso, cada personagem traz uma riqueza de
+                personalidade e uma jornada única.</p>
+        </section>
+
+        <section>
+            <h2>Além de Harry Potter</h2>
+            <p>A magia de J.K. Rowling vai além de Harry Potter. A autora também escreveu obras relacionadas, como a
+                série de filmes e livros de <strong>Animais Fantásticos e Onde Habitam</strong>, além de estar
+                fortemente envolvida em causas filantrópicas, apoiando diversas instituições de caridade.</p>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 - HARRY POTTER</p>
+        <p>&copy; 2024 - Mundo Mágico de Harry Potter | Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
